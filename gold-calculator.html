@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>حاسبة الذهب | الإمارات</title>
+  <style>
+    :root{--bg:#f7f4ee;--card:#fffdf9;--ink:#191715;--muted:#77716a;--line:#e9e0d4;--gold:#b78627;--soft:#fbf1d7;--navy:#17242b;--green:#17825c;--red:#b64d43;--shadow:0 18px 55px rgba(60,42,15,.09)}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--ink);background:radial-gradient(circle at 90% 0,#eed99b55,transparent 26rem),radial-gradient(circle at 0 20%,#d8c19d33,transparent 24rem),var(--bg);font-family:Tahoma,Arial,sans-serif}button,input,select{font:inherit}button{cursor:pointer}.app{width:min(1140px,calc(100% - 28px));margin:auto;padding:22px 0 35px}.top{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:28px}.brand{display:flex;align-items:center;gap:11px}.mark{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(145deg,#ebcf79,#956719);color:#fff;font-weight:900;box-shadow:0 9px 22px #b7862748}.brand strong{display:block}.brand small,.muted{color:var(--muted);font-size:11px}.top-right{display:flex;align-items:center;gap:14px}.status{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:11px}.dot{width:8px;height:8px;border-radius:50%;background:#cf8643}.dot.live{background:#20a16d}.dot.loading{background:var(--gold);animation:pulse 1s infinite}@keyframes pulse{50%{opacity:.35}}.btn{border:0;border-radius:12px;padding:11px 15px;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.ghost{border:1px solid var(--line);background:#ffffffb8;color:var(--ink)}.btn.primary{background:var(--navy);color:#fff;box-shadow:0 10px 22px #17242b2b}
+    .hero{display:grid;grid-template-columns:1.12fr .88fr;gap:21px;align-items:stretch;margin-bottom:21px}.copy{padding:25px 2px}.eyebrow{color:var(--gold);font-size:12px;font-weight:800;margin-bottom:16px}.eyebrow:before{content:"";display:inline-block;width:8px;height:8px;margin-left:7px;border-radius:50%;background:var(--gold)}h1{margin:0;font-size:clamp(35px,5vw,60px);line-height:1.07;letter-spacing:-2px}h1 em{font-style:normal;color:var(--gold)}.copy p{max-width:610px;margin:19px 0 24px;color:var(--muted);line-height:1.9;font-size:15px}.actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.toggle{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:11px}.toggle input{accent-color:var(--gold)}.spot{position:relative;overflow:hidden;padding:26px;border-radius:29px;color:#fff;background:radial-gradient(circle at 100% 0,#e9c97866,transparent 18rem),linear-gradient(145deg,#253740,#111c21);box-shadow:var(--shadow)}.spot:after{content:"Au";position:absolute;left:-10px;bottom:-40px;color:#ffffff0b;font-size:190px;font-weight:900}.spot-head,.section-head,.card-head{display:flex;justify-content:space-between;align-items:center;gap:14px}.spot-label{color:#ffffffad;font-size:11px}.chip{padding:7px 10px;border-radius:99px;border:1px solid #ffffff25;color:#f3d98f;background:#ffffff0d;font-size:10px}.spot-price{position:relative;z-index:1;margin:34px 0 8px;font-size:47px;letter-spacing:-2px}.spot-price span{font-size:13px;letter-spacing:0;color:#ffffffa8}.spot-meta{position:relative;z-index:1;display:flex;justify-content:space-between;gap:12px;color:#ffffff99;font-size:10px}.spot-meta b{display:block;margin-top:6px;color:#fff;font-size:12px}.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:21px}.quick .item{padding:17px 19px;border:1px solid var(--line);border-radius:17px;background:#ffffffa8}.quick span,.quick small{color:var(--muted);font-size:10px}.quick strong{display:block;margin:9px 0 2px;font-size:20px}
+    .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:21px;align-items:start}.card{border:1px solid #e4d9c9cc;border-radius:23px;background:#fffdf9d9;box-shadow:0 13px 43px #4a321014;backdrop-filter:blur(14px)}.card.pad{padding:23px}.section-head{margin-bottom:21px}.section-head h2,.card-head h2{margin:0;font-size:18px}.section-head p,.card-head p{margin:6px 0 0;color:var(--muted);font-size:10px}.num{display:grid;place-items:center;width:33px;height:33px;border-radius:11px;color:var(--gold);background:var(--soft);font-weight:900;font-size:12px}.form{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field.full{grid-column:1/-1}.label{display:flex;justify-content:space-between;gap:10px;margin-bottom:7px;font-size:11px;font-weight:700}.label small{color:var(--muted);font-weight:400}input,select{width:100%;height:45px;padding:0 12px;border:1px solid var(--line);border-radius:11px;outline:0;background:#fff;color:var(--ink)}input:focus,select:focus{border-color:#ddbd68;box-shadow:0 0 0 4px #e9c9782b}.hint{margin-top:6px;color:var(--muted);font-size:9px}.check{display:flex;align-items:center;gap:8px;margin:19px 0 16px;padding:12px;border-radius:12px;border:1px solid var(--line);background:#fbf1d788;color:#5f5445;font-size:11px}.check input{width:17px;height:17px;accent-color:var(--gold)}.error{margin-top:10px;color:var(--red);font-size:10px}.hidden{display:none!important}.results{display:grid;gap:21px}.dark{padding:23px;border-radius:23px;color:#fff;background:radial-gradient(circle at 100% 0,#e9c97844,transparent 18rem),linear-gradient(145deg,#253740,#17242b)}.dark .card-head p{color:#ffffff99}.dark .num{color:#f2d991;background:#e9c97824}.summary{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.metric{min-height:100px;padding:15px;border-radius:15px;background:#ffffff0d;border:1px solid #ffffff17}.metric small{color:#ffffff9e;font-size:10px}.metric strong{display:block;margin-top:12px;color:#fff;font-size:20px}.metric.accent{background:#e9c97822}.metric.accent strong{color:#f4d887}.verdict{display:flex;gap:10px;align-items:flex-start;margin-top:15px;padding:13px;border-radius:13px;background:#ffffff10;color:#fff;font-size:11px;line-height:1.7}.verdict b{display:grid;place-items:center;flex:0 0 auto;width:24px;height:24px;border-radius:50%;color:#17242b;background:#f2d991}.table-card,.chart-card{padding:21px}.card-head{margin-bottom:16px}.mini{padding:7px 9px;border-radius:8px;color:var(--gold);background:var(--soft);font-size:9px;white-space:nowrap}table{width:100%;border-collapse:collapse;font-size:11px}th{padding:10px 7px;color:var(--muted);border-bottom:1px solid var(--line);font-size:10px;text-align:right}td{padding:12px 7px;border-bottom:1px solid #f0ebe3}td:not(:first-child){text-align:left;direction:ltr;font-weight:700}tr:last-child td{border-bottom:0}.total td{color:var(--gold);background:#fbf1d766;font-weight:900}.notice{margin-top:17px;padding:13px 14px;border-right:3px solid var(--gold);border-radius:10px;color:#6d6256;background:#ffffff99;font-size:10px;line-height:1.8}.chart-card{margin-top:21px}.bars{display:flex;align-items:end;gap:9px;height:150px;padding:22px 5px 0;border-bottom:1px solid var(--line)}.bar-wrap{display:flex;flex:1;height:100%;flex-direction:column;align-items:center;justify-content:end;gap:7px}.bar{position:relative;width:min(34px,80%);min-height:15px;border-radius:8px 8px 3px 3px;background:linear-gradient(to top,#9d711e,#ecd37e)}.bar-wrap:last-child .bar{background:linear-gradient(to top,#1b6c4d,#62b88c)}.bar-value{position:absolute;top:-17px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:8px;white-space:nowrap}.bar-wrap small{color:var(--muted);font-size:8px;white-space:nowrap}.foot{display:flex;justify-content:space-between;gap:12px;margin-top:12px;color:var(--muted);font-size:9px}.foot b{color:var(--green)}footer{display:flex;justify-content:space-between;gap:14px;margin-top:25px;color:var(--muted);font-size:9px}footer strong{color:var(--gold)}
+    @media(max-width:850px){.hero,.grid{grid-template-columns:1fr}.copy{padding:10px 2px 18px}.quick{grid-template-columns:1fr 1fr}}@media(max-width:540px){.app{width:calc(100% - 18px);padding-top:14px}.top{align-items:flex-start}.top-right{flex-direction:column-reverse;align-items:flex-end;gap:7px}.quick,.form,.summary{grid-template-columns:1fr}.field.full{grid-column:auto}.card.pad,.dark,.table-card,.chart-card{padding:17px}h1{font-size:39px}.spot-price{font-size:42px}footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="top">
+      <div class="brand"><div class="mark">Au</div><div><strong>حاسبة الذهب</strong><small>الإمارات · مقارنة المصنعية</small></div></div>
+      <div class="top-right"><div class="status"><i id="dot" class="dot"></i><span id="status">وضع المعاينة</span></div><button id="refresh" class="btn ghost">↻ تحديث الأسعار</button></div>
+    </header>
+
+    <section class="hero">
+      <div class="copy">
+        <div class="eyebrow">سوق الذهب · الإمارات</div>
+        <h1>احسب قيمة الذهب<br><em>قبل أن تدفع.</em></h1>
+        <p>أدخل الوزن والعيار والسعر المعروض، واحصل على مقارنة فورية بين السعر العالمي والمصنعية المحلية والضريبة.</p>
+        <div class="actions"><button class="btn primary" onclick="document.getElementById('calculator').scrollIntoView({behavior:'smooth'})">ابدأ الحساب ←</button><label class="toggle"><input id="daily" type="checkbox" checked> تحديث يومي تلقائي</label></div>
+      </div>
+      <div class="spot"><div class="spot-head"><span class="spot-label">السعر المرجعي · عيار 24</span><span id="chip" class="chip">بيانات معاينة</span></div><div class="spot-price"><span id="spot">—</span> <span>د.إ / جرام</span></div><div class="spot-meta"><div>الأونصة العالمية<b id="usd">—</b></div><div>آخر تحديث<b id="updated">لم يتم التحديث</b></div></div></div>
+    </section>
+
+    <section class="quick"><div class="item"><span>عيار 24</span><strong id="p24">—</strong><small>سعر الجرام</small></div><div class="item"><span>عيار 22</span><strong id="p22">—</strong><small>سعر الجرام</small></div><div class="item"><span>عيار 21</span><strong id="p21">—</strong><small>سعر الجرام</small></div><div class="item"><span>عيار 18</span><strong id="p18">—</strong><small>سعر الجرام</small></div></section>
+
+    <section id="calculator" class="grid">
+      <article class="card pad">
+        <div class="section-head"><div><h2>بيانات القطعة</h2><p>أدخل بيانات الفاتورة أو العرض</p></div><span class="num">01</span></div>
+        <form id="form">
+          <div class="form">
+            <div><label class="label">العيار <small>نقاء الذهب</small></label><select id="purity"><option value="24">عيار 24 — نقي</option><option value="22">عيار 22</option><option value="21" selected>عيار 21</option><option value="18">عيار 18</option><option value="14">عيار 14</option></select></div>
+            <div><label class="label">الوزن <small>بالجرام</small></label><input id="weight" type="number" min=".01" step=".01" value="5"></div>
+            <div class="field full"><label class="label">السعر المعروض من المتجر <small>اختياري</small></label><input id="offered" type="number" min="0" step=".01" value="2050" placeholder="مثال: 2050"><div class="hint">يساعدك هذا الحقل على معرفة إن كان العرض مرتفعًا أو مناسبًا.</div></div>
+            <div><label class="label">المصنعية الإماراتية <small>د.إ / جرام</small></label><input id="localMaking" type="number" min="0" step=".5" value="35"></div>
+            <div><label class="label">المصنعية العالمية <small>د.إ / جرام</small></label><input id="worldMaking" type="number" min="0" step=".5" value="20"></div>
+          </div>
+          <label class="check"><input id="vat" type="checkbox" checked> احتساب ضريبة القيمة المضافة في الإمارات <b>5%</b></label>
+          <button class="btn primary" style="width:100%">احسب السعر النهائي</button>
+          <div id="error" class="error hidden">يرجى إدخال وزن أكبر من صفر.</div>
+        </form>
+      </article>
+
+      <div class="results">
+        <article class="dark">
+          <div class="card-head"><div><h2>النتيجة التقديرية</h2><p>حسب البيانات المدخلة</p></div><span class="num">02</span></div>
+          <div class="summary"><div class="metric"><small>قيمة الذهب الخام</small><strong id="raw">—</strong></div><div class="metric accent"><small>السعر المحلي النهائي</small><strong id="localTotal">—</strong></div><div class="metric"><small>السعر العالمي المرجعي</small><strong id="worldTotal">—</strong></div><div class="metric"><small>السعر المعروض</small><strong id="offeredTotal">—</strong></div></div>
+          <div class="verdict"><b id="icon">✓</b><span id="verdict">أدخل بيانات القطعة للحصول على النتيجة.</span></div>
+        </article>
+
+        <article class="card table-card">
+          <div class="card-head"><div><h2>مقارنة المصنعية</h2><p>الإمارات مقابل السعر العالمي المرجعي</p></div><span class="mini">شفافية السعر</span></div>
+          <table><thead><tr><th>البند</th><th>الإمارات</th><th>العالمي</th></tr></thead><tbody><tr><td>الذهب الخام</td><td id="rawL">—</td><td id="rawW">—</td></tr><tr><td>المصنعية</td><td id="makeL">—</td><td id="makeW">—</td></tr><tr><td>الضريبة</td><td id="vatL">—</td><td>—</td></tr><tr class="total"><td>الإجمالي</td><td id="totalL">—</td><td id="totalW">—</td></tr></tbody></table>
+          <div class="notice">المصنعية تختلف حسب التصميم والعلامة التجارية ووزن القطعة والأحجار والمتجر. استخدم أرقام الفاتورة الفعلية للحصول على نتيجة أدق.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card chart-card"><div class="card-head"><div><h2>اتجاه السعر المرجعي</h2><p>عرض توضيحي لآخر 7 أيام</p></div><span id="change" class="mini">—</span></div><div id="bars" class="bars"></div><div class="foot"><span>المصدر: <b id="source">بيانات معاينة محلية</b></span><span>الدرهم مرتبط بالدولار تقريبًا عند 3.6725</span></div></section>
+    <footer><span>أداة تقديرية وليست عرض بيع أو شراء ملزمًا.</span><span>مصمم للمستخدم العربي في <strong>الإمارات</strong></span></footer>
+  </div>
+
+  <script>
+    const OUNCE=31.1034768, AEDUSD=3.6725, API="https://api.gold-api.com/price/XAU", DEMO=391.8;
+    let state={base24:DEMO,usd:DEMO*OUNCE/AEDUSD,updated:null,source:"بيانات معاينة محلية",demo:true,change:null};
+    const $=id=>document.getElementById(id), fmt=new Intl.NumberFormat("ar-AE",{minimumFractionDigits:2,maximumFractionDigits:2});
+    const money=v=>Number.isFinite(v)?`${fmt.format(v)} د.إ`:"—";
+    const signed=v=>Number.isFinite(v)?`${v>=0?"+":""}${money(v)}`:"—";
+    const date=v=>v?new Date(v).toLocaleDateString("ar-AE",{day:"numeric",month:"short",year:"numeric"}):"بيانات معاينة";
+    function get(k){try{return localStorage.getItem(k)}catch{return null}}
+    function set(k,v){try{localStorage.setItem(k,v)}catch{}}
+    function status(type,text){$("dot").className=`dot ${type}`;$("status").textContent=text}
+    function render(){
+      const prices={24:state.base24,22:state.base24*22/24,21:state.base24*21/24,18:state.base24*18/24};
+      $("spot").textContent=fmt.format(prices[24]);$("usd").textContent=`${fmt.format(state.usd)} USD`;$("updated").textContent=date(state.updated);$("chip").textContent=state.demo?"بيانات معاينة":"سعر مباشر";
+      $("p24").textContent=money(prices[24]);$("p22").textContent=money(prices[22]);$("p21").textContent=money(prices[21]);$("p18").textContent=money(prices[18]);$("source").textContent=state.source;$("change").textContent=state.change==null?"بيانات الاتجاه تجريبية":`تغير اليوم ${state.change>=0?"+":""}${state.change.toFixed(1)}%`;
+      const factors=[.982,.989,.997,.994,1.005,1.012,1], labels=["قبل 6 أيام","قبل 5","قبل 4","قبل 3","قبل 2","أمس","اليوم"], vals=factors.map(x=>state.base24*x), min=Math.min(...vals), max=Math.max(...vals);
+      $("bars").innerHTML=vals.map((v,i)=>`<div class="bar-wrap"><div class="bar" style="height:${38+(v-min)/Math.max(.01,max-min)*50}%"><span class="bar-value">${fmt.format(v)}</span></div><small>${labels[i]}</small></div>`).join("");
+    }
+    function calc(){
+      const purity=+$('purity').value, weight=+$('weight').value||0, offered=+$('offered').value||0, lm=+$('localMaking').value||0, wm=+$('worldMaking').value||0, rate=$("vat").checked?.05:0;
+      $("error").classList.toggle("hidden",weight>0);if(weight<=0)return;
+      const raw=weight*state.base24*purity/24, localMake=weight*lm, worldMake=weight*wm, vat=(raw+localMake)*rate, local=raw+localMake+vat, world=raw+worldMake;
+      $("raw").textContent=money(raw);$("localTotal").textContent=money(local);$("worldTotal").textContent=money(world);$("offeredTotal").textContent=offered?money(offered):"—";$("rawL").textContent=money(raw);$("rawW").textContent=money(raw);$("makeL").textContent=money(localMake);$("makeW").textContent=money(worldMake);$("vatL").textContent=money(vat);$("totalL").textContent=money(local);$("totalW").textContent=money(world);
+      let text="تم احتساب السعر التقديري حسب البيانات المدخلة.", icon="✓";if(offered){const d=offered-local,p=d/local*100;if(p>10){icon="!";text=`السعر المعروض أعلى من التقدير المحلي بنحو ${money(Math.abs(d))} (${Math.abs(p).toFixed(1)}%).`}else if(p< -5){icon="↓";text=`السعر المعروض أقل من التقدير المحلي بنحو ${money(Math.abs(d))}، مع ضرورة التأكد من تفاصيل القطعة.`}else{text=`السعر المعروض ضمن نطاق قريب من التقدير المحلي. الفرق: ${signed(d)}.`}}$("icon").textContent=icon;$("verdict").textContent=text;
+    }
+    async function refresh(){
+      $("refresh").disabled=true;$("refresh").textContent="جاري التحديث...";status("loading","جاري تحديث الأسعار...");
+      try{const r=await fetch(API,{cache:"no-store"});if(!r.ok)throw Error();const d=await r.json(), usd=Number(d.price??d.value??d.ask??d.close??d.data?.price);if(!Number.isFinite(usd)||usd<=0)throw Error();state={base24:usd*AEDUSD/OUNCE,usd,updated:new Date().toISOString(),source:"Gold API",demo:false,change:Number(d.changePercent??d.change??NaN)};set("gold-live",JSON.stringify(state));status("live","تم تحديث السعر")}catch(e){status(state.updated&&!state.demo?"demo":"","آخر تحديث محفوظ")}finally{$("refresh").disabled=false;$("refresh").textContent="↻ تحديث الأسعار";render();calc()}
+    }
+    function load(){try{const x=JSON.parse(get("gold-live")||"null");if(x&&x.base24>0)state={...state,...x,demo:false}}catch{}}
+    $("form").addEventListener("submit",e=>{e.preventDefault();calc()});["purity","weight","offered","localMaking","worldMaking","vat"].forEach(id=>$(id).addEventListener("input",calc));$("refresh").addEventListener("click",refresh);$("daily").checked=get("gold-daily")!=="false";$("daily").addEventListener("change",e=>set("gold-daily",e.target.checked));
+    load();render();calc();if($("daily").checked&&(!state.updated||new Date(state.updated).toDateString()!==new Date().toDateString()))refresh();else status(state.demo?"":"live",state.demo?"وضع المعاينة":"آخر تحديث محفوظ");
+  </script>
+</body>
+</html>
